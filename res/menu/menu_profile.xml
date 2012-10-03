@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+ 
+
+
+	<item android:id="@+id/item0_1" android:title="이 사용자 즐겨찾기에 등록하기"
+	 />
+ 
+</menu>

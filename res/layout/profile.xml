@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@drawable/bg">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+		        android:id="@+id/ll_profile">
+	        
+		    <TextView
+		        android:id="@+id/textView1"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:textAppearance="?android:attr/textAppearanceLarge" 
+		        android:paddingBottom="20dp"
+           		android:text="님" android:gravity="center" android:paddingTop="10dp" android:background="#99000000" android:textColor="#ffffffff" android:layout_marginBottom="20dp"/>
+		        
+	        
+	    </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_height="wrap_content"
+            android:text="▶ 최근 곡(자세히)"
+            android:textAppearance="?android:attr/textAppearanceMedium" android:layout_weight="0.5" android:layout_width="match_parent"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_height="wrap_content"
+            android:text="▶ 자주 한 곡(자세히)"
+            android:textAppearance="?android:attr/textAppearanceMedium" android:layout_weight="0.5" android:layout_width="match_parent"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:visibility="gone"
+         android:background="#99000000"  >
+
+        <ListView
+            android:id="@+id/lvrecent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" >
+        </ListView>
+        <ListView
+            android:id="@+id/lvoften"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" >
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

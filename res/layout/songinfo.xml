@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@drawable/bg">
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:scrollbars="vertical" android:scrollbarAlwaysDrawVerticalTrack="false">
+
+	    <LinearLayout
+	        android:id="@+id/linearLayout1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	        
+		    <RelativeLayout
+		        android:id="@+id/relativeLayout1"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content" android:padding="10dp" android:background="#99000000">
+
+		        <TextView
+		            android:id="@+id/tv_genre"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:text="Small Text"
+		            android:layout_below="@+id/tv_title"
+		            android:textAppearance="?android:attr/textAppearanceSmall" android:layout_alignParentLeft="true" android:gravity="center" android:paddingTop="10dp"/>
+
+		        <TextView
+		            android:id="@+id/tv_artist"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_alignParentTop="true"
+		            android:paddingBottom="10dp"
+		            android:text="Small Text"
+		            android:textAppearance="?android:attr/textAppearanceSmall" android:gravity="center"/>
+
+		        <TextView
+		            android:id="@+id/tv_title"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_below="@+id/tv_artist"
+		            android:text="Large Text"
+		            android:textAppearance="?android:attr/textAppearanceLarge" android:gravity="center" android:textColor="#FFFFFFFF"/>
+
+		    </RelativeLayout>
+	        
+	    </LinearLayout>
+    </ScrollView>
+
+
+	    <ListView
+	        android:id="@+id/listView1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" android:background="#99000000" android:visibility="gone">
+	    </ListView>
+</LinearLayout>
